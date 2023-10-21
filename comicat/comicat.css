@@ -1,6 +1,21 @@
 .header {
-    position: sticky;
+    position: fixed;
     left: 0;
     bottom: 0;
     z-index: 99;
+    background: white;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+#smenu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+#smenu ul li {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
 }
