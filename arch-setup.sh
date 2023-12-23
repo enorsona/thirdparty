@@ -27,7 +27,7 @@ if [[ $Maker == *"AMD"* ]]; then
 	echo "检测到AMD处理器。执行AMD Ucode安装..."
 	pacman -S amd-ucode --noconfirm
 # 开始安装基础软件包
-pacman -S dhcpcd iwd vim sudo unzip wget git base-devel openssh docker zsh grub efibootmgr arch-install-scripts --noconfirm
+pacman -S dhcpcd iwd vim sudo unzip wget git base-devel openssh docker zsh grub efibootmgr arch-install-scripts networkmanager --noconfirm
 # 创建日本镜像站点列表
 wget -O /etc/pacman.d/mirrorlist https://raw.githubusercontent.com/enorsona/thirdparty/master/mirrorlist
 # 安装字体
@@ -66,5 +66,4 @@ grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable numLockOnTty
 systemctl enable sshd
 systemctl enable docker
-systemctl enable dhcpcd
 systemctl enable iwd
