@@ -39,15 +39,12 @@ chmod 444 "$FontFolder/AriarkRound.ttf"
 genfstab -U / >> /etc/fstab
 
 # 准备AUR
-echo "准备AUR中..."
 cd /opt
 git clone https://aur.archlinux.org/yay.git
 cd yay
-echo "开始编译AUR..."
 makepkg -si
 
 # 准备ROOT用户密码
-echo "设置ROOT用户密码..."
 echo -e "$PINCODE\n$PINCODE" | passwd root
 yay -S systemd-numlockontty
 
@@ -61,9 +58,3 @@ sed -i "/root ALL=(ALL:ALL) ALL/a syllaris ALL=(ALL:ALL) NOPASSWD:ALL"
 # 设置引导服务
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Grub
 grub-mkconfig -o /boot/grub/grub.cfg
-
-# 启用服务
-systemctl enable numLockOnTty
-systemctl enable sshd
-systemctl enable docker
-systemctl enable iwd
