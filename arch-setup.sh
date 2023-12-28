@@ -53,7 +53,7 @@ useradd -m syllaris
 echo -e "$PINCODE\n$PINCODE" | passwd syllaris
 
 # 准备sudoers
-sed -i "/root ALL=(ALL:ALL) ALL/a syllaris ALL=(ALL:ALL) NOPASSWD:ALL"
+sed -i "/root ALL=(ALL:ALL) ALL/a syllaris ALL=(ALL:ALL) NOPASSWD:ALL" /etc/sudoers
 
 # 设置引导服务
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Grub
