@@ -1,3 +1,13 @@
 .bili-video-card {
   margin: 0 !important;
 }
+.aria-header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+.aria-header :first-child {
+  display: flex;
+  
+}
