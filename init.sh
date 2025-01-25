@@ -23,7 +23,7 @@ echo -e "$root_password\n$root_password" | passwd root
 
 useradd -m "$user_name"
 echo -e "$user_password\n$user_password" | passwd "$user_name"
-echo -e "$user_name ALL=(ALL:ALL) NOPASSWD: ALL"
+echo -e "$user_name ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 cp -r /root/.oh-my-zsh "/home/$user_name"
 wget -q -O "/home/$user_name/.zshrc" "https://cdn.jsdelivr.net/gh/enorsona/thirdparty@master/.zshrc"
 
