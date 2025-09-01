@@ -72,6 +72,10 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
     display: none;
 }
 
+img {
+    pointer-events: none;
+}
+
 .jssdk.sierokarte .toggle {
     display: flex;
     position: absolute;
