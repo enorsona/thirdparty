@@ -102,12 +102,12 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
     left: 0;
     top: 0;
     backdrop-filter: opacity(0.5);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 .jssdk.sierokarte.on .panel-frame {
-    display: flex;
+    display: none;
 }
 .panel-frame .popup {
     position: relative;
