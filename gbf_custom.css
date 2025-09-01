@@ -90,7 +90,7 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
 .jssdk.sierokarte .toggle::before {
     content: "開";
 }
-.jssdk.sierokarte .toggle.on {
+.jssdk.sierokarte.on .toggle {
     display: none;
 }
 .panel-frame {
@@ -102,9 +102,12 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
     left: 0;
     top: 0;
     backdrop-filter: opacity(0.5);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+.jssdk.sierokarte.on .panel-frame {
+    display: flex;
 }
 .panel-frame .popup {
     position: relative;
