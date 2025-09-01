@@ -1,0 +1,68 @@
+html, div {
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar, div::-webkit-scrollbar {
+    display: none !important;
+    width: 0;
+    height: 0;
+}
+*, html, html * {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.jssdk.sierokarte {
+    user-select: none;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .btn-bgm-change-wrapper {
+    top: 455px;
+    left: 80px;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-mission-button {
+    top: 460px;
+    left: 190px;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-user-menu{
+    top: 230px;
+    left: 0;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-link-present{
+    top: 400px;
+    left: 190px;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-link-notification{
+    top: 400px;
+    left: 240px;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-user-status {
+    top: 410px;
+    right: 140px;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-link-multi {
+    top: 350px;
+    right: 0;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-link-quest {
+    top: 390px;
+    right: 240px;
+    z-index: 5;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-link-quest .btn-link-quest.raid,
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-link-quest .btn-link-quest.raid.on {
+    background-position-x: -850px;
+    background-position-y: -15px;
+    width: 75px;
+    height: 90px;
+}
+
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-active-support{
+    top: 445px;
+    right: 5px;
+}
+.jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-user-menu .btn-passport {
+    top: 229px;
+    left: 155px;
+}
+.jssdk.sierokarte.no-gacha .btn-global-gacha {
+    display: none;
+}
