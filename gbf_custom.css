@@ -66,3 +66,25 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
 .jssdk.sierokarte.no-gacha .btn-global-gacha {
     display: none;
 }
+
+.jssdk.sierokarte .toggle {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: #333;
+    width: 2rem;
+    height: 2rem;
+    z-index: 99999;
+    border-radius: 50%;
+    color: #3360d2;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.jssdk.sierokarte .toggle::before {
+    content: "開";
+}
+.jssdk.sierokarte .toggle.on::before {
+    content: "閉";
+}
