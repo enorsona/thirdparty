@@ -55,6 +55,11 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
     height: 90px;
 }
 
+.jssdk.sierokarte .prt-vyrnsampo {
+    top: 450px;
+    right: 50px;    
+}
+
 .jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-active-support{
     top: 445px;
     right: 5px;
