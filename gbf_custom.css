@@ -57,7 +57,7 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
 
 .jssdk.sierokarte .prt-vyrnsampo {
     top: 450px;
-    right: 50px;    
+    right: 50px;
 }
 
 .jssdk.sierokarte .cnt-mypage .prt-user-scene .prt-active-support{
@@ -90,6 +90,25 @@ html::-webkit-scrollbar, div::-webkit-scrollbar {
 .jssdk.sierokarte .toggle::before {
     content: "開";
 }
-.jssdk.sierokarte .toggle.on::before {
-    content: "閉";
+.jssdk.sierokarte .toggle.on {
+    display: none;
+}
+.panel-frame {
+    width: 100vw;
+    height: 100vh;
+    z-index: 99998;
+    position: absolute;
+    filter: blur(1rem);
+    left: 0;
+    top: 0;
+    backdrop-filter: opacity(0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel-frame .popup {
+    position: relative;
+    display: flex;
+    width: 80vw;
+    height: 80vh;
 }
